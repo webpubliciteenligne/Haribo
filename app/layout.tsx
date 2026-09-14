@@ -15,17 +15,21 @@ const inter = Inter({
   display: "swap",
 });
 
-// Titre synchronisé avec lib/content.ts (source unique).
+// Page discrète : trafic payant uniquement (Meta/TikTok). Pas d'indexation search,
+// pas de carte de partage Open Graph — l'URL n'apparaît pas dans Google/Bing.
 export const metadata: Metadata = {
   title: offerContent.title,
-  description: offerContent.title,
-  robots: { index: true, follow: true },
-  openGraph: {
-    type: "website",
-    locale: "fr_FR",
-    title: offerContent.title,
-    description: offerContent.title,
-    // images: ["/images/og-cover.webp"], // TODO : fournir le visuel de partage
+  robots: {
+    index: false,
+    follow: false,
+    nocache: true,
+    googleBot: {
+      index: false,
+      follow: false,
+      noimageindex: true,
+      nosnippet: true,
+      noarchive: true,
+    },
   },
 };
 
