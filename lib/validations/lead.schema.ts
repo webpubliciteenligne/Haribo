@@ -29,7 +29,7 @@ export const leadSchema = z.object({
   message: z
     .string()
     .trim()
-    .min(10, "Merci de détailler votre demande (10 caractères minimum).")
+    .min(2, "Merci d'écrire un mot.")
     .max(1000, "Message trop long (1000 caractères maximum)."),
 
   // Honeypot : champ invisible pour l'utilisateur, doit rester vide.

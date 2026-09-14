@@ -15,10 +15,12 @@
 export const offerContent = {
   // Intitulé officiel transmis par le client le 12/09 — verbatim, ne pas reformuler.
   title: "Préparateur / Préparatrice de pochettes surprises à domicile (H/F) – Complément de revenu stable",
+  // Texte transmis le 14/09 — verbatim.
   body: [
-    "Pas d'expérience requise, pas d'horaires imposés : vous préparez des pochettes surprises directement chez vous, à votre rythme.",
-    "Le matériel est fourni, la rémunération dépend de votre disponibilité, et le démarrage se fait en quelques minutes.",
-    "Intéressé(e) ? Laissez vos coordonnées ci-dessous — un membre de notre équipe vous recontacte rapidement pour vous expliquer tous les détails.",
+    "HARIBO recrute des Préparateurs / Préparatrices de pochettes surprises à domicile (H/F).",
+    "Vous recherchez un complément de revenu avec une activité salariée à temps partiel ?",
+    "Aucune expérience n'est requise : formation et accompagnement sont prévus à la prise de poste.",
+    "Mission simple et organisée : préparation, assemblage et conditionnement de pochettes surprises.",
   ],
   images: [
     {
@@ -30,6 +32,7 @@ export const offerContent = {
       alt: "Pack coloriage et bonbons",
     },
   ],
-  formTitle: "Intéressé(e) ? Laissez-nous vos coordonnées",
+  formTitle: "Intéressé(e) ? Remplissez le formulaire ci-dessous pour confirmer votre disponibilité.",
+  messagePlaceholder: "Intéressé(e) ? Écrivez-nous.",
   legalMention: "Mention légale à compléter (raison sociale, contact) dès réception des informations du client.",
 };

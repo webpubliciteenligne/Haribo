@@ -3,6 +3,7 @@
 import { useConsent } from "@/components/consent/ConsentProvider";
 import { Button } from "@/components/ui/Button";
 import { FormField } from "@/components/ui/FormField";
+import { offerContent } from "@/lib/content";
 import { getCookie, getTtclidFromUrl, trackLeadConversion } from "@/lib/tracking/events";
 import { cn } from "@/lib/utils";
 import { leadSchema, type LeadFormValues } from "@/lib/validations/lead.schema";
@@ -160,7 +161,7 @@ export function LeadForm() {
           id="message"
           rows={4}
           className={cn(inputClasses, "resize-none")}
-          placeholder="Dites-nous en quelques mots pourquoi ça vous intéresse…"
+          placeholder={offerContent.messagePlaceholder}
           disabled={status === "submitting"}
           {...register("message")}
         />
