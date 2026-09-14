@@ -21,6 +21,7 @@ export const offerContent = {
     "Vous recherchez un complément de revenu avec une activité salariée à temps partiel ?",
     "Aucune expérience n'est requise : formation et accompagnement sont prévus à la prise de poste.",
     "Mission simple et organisée : préparation, assemblage et conditionnement de pochettes surprises.",
+    "CDD de 3 mois – 20 h/semaine – activité à domicile – rémunération de 14 € nets/heure.",
   ],
   images: [
     {
