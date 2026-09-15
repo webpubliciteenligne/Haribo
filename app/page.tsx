@@ -12,9 +12,7 @@ import Image from "next/image";
  */
 export default function LandingPage() {
   return (
-    // pb-36 : marge de sécurité pour ne jamais être masqué par le bandeau cookie
-    // (fixed en bas d'écran) sur les petits mobiles où son texte passe sur 2 lignes.
-    <main className="mx-auto flex min-h-screen max-w-2xl flex-col gap-8 px-5 pb-36 pt-14 sm:pt-20">
+    <main className="mx-auto flex min-h-screen max-w-2xl flex-col gap-8 px-5 pb-16 pt-14 sm:pt-20">
       <header className="text-center">
         <h1 className="text-2xl font-bold leading-tight sm:text-3xl">{offerContent.title}</h1>
       </header>

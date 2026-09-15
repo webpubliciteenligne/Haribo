@@ -1,7 +1,4 @@
 import { ConsentProvider } from "@/components/consent/ConsentProvider";
-import { CookieBanner } from "@/components/consent/CookieBanner";
-import { MetaPixel } from "@/components/tracking/MetaPixel";
-import { TikTokPixel } from "@/components/tracking/TikTokPixel";
 import { offerContent } from "@/lib/content";
 import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
@@ -44,11 +41,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="fr" className={inter.variable}>
       <body className="min-h-screen bg-brand-bg font-sans text-brand antialiased">
+        {/* Pas de bandeau cookie ni de pixels : décision client (discrétion, pubs sans traceur). */}
         <ConsentProvider>
           {children}
-          <CookieBanner />
-          <MetaPixel />
-          <TikTokPixel />
         </ConsentProvider>
       </body>
     </html>
